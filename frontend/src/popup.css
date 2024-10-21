@@ -1,0 +1,38 @@
+.basket-container {
+    padding: 20px;
+  }
+  
+  .basket-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .basket-table th,
+  .basket-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .basket-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .empty-basket {
+    text-align: center;
+    font-size: 1.2em;
+    color: #888;
+  }
+  
+  .basket-total {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: right;
+  }
+  
+  .basket-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  

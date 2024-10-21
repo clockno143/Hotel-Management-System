@@ -1,0 +1,144 @@
+.slot-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .slot-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .slot-time {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0 0 8px 0;
+  }
+  
+  .slot-qty {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 16px;
+  }
+  
+  .book-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .book-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* Main container for the slots page */
+div {
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+}
+
+/* Styling for each date card */
+.slot-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px;
+    width: 180px; /* Fixed width for uniformity */
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding hover effect to the slot cards */
+.slot-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the slot time */
+.slot-time {
+    font-size: 1.5em;
+    color: #0056b3; /* Dark blue for the time */
+    margin: 0;
+}
+
+/* Styling for the available quantity */
+.slot-qty {
+    font-size: 1em;
+    color: #555; /* Grey color for quantity */
+}
+
+/* Button styles */
+.book-button {
+    background-color: #0056b3; /* Primary color for buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+.book-button:hover {
+    background-color: #003d7a; /* Darker shade for hover */
+}
+
+/* Styling for the date header */
+h2 {
+    font-size: 2em;
+    margin: 0;
+    color: #333;
+}
+
+/* Flex container styles */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Button container styles */
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+}
+
+
+/* Styling for each date card */
+.slot-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+ 
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding hover effect to the slot cards */
+.slot-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
