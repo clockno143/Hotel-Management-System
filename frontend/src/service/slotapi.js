@@ -1,10 +1,19 @@
 import axios from 'axios';
+import Cookies from 'js-cookie';
 
 const API_URL = 'http://127.0.0.1:5000/slot';
 
 export const upsertSlot = async (slotData) => {
+    let token = Cookies.get("authToken")
     try {
-        const response = await axios.post(`${API_URL}/upsert`, slotData);
+        const response = await axios.post(`${API_URL}/upsert`, slotData,
+            {
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Authorization': `Bearer ${token}` // Passing JWT token in the Authorization header
+                }
+            }
+        );
         console.log(response);
         return response.data;
     } catch (error) {
@@ -18,7 +27,15 @@ export const upsertSlot = async (slotData) => {
 };
 
 export const fetchSlots = async () => {
-    const response = await axios.get(`${API_URL}`);
+    let token = Cookies.get("authToken")
+    const response = await axios.get(`${API_URL}`,
+        {
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${token}` // Passing JWT token in the Authorization header
+            }
+        }
+    );
     console.log(response)
     return response.data;
 };

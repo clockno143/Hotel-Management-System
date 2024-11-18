@@ -19,7 +19,7 @@ export function USserLogin({ setToken, setRole }) {
             setRole(response['role']);
             setToken(response['token']);
         } catch (error) {  // Lowercase error
-            alert("Error Occurred");
+            alert("Error Occurred" + error);
         }
     };
 
