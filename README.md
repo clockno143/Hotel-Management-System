@@ -1,5 +1,4 @@
-# enpm680fall2024project-nikhilvb
-
+Hotel Management System
 
 
 ## Getting started
